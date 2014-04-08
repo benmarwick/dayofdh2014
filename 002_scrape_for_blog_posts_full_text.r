@@ -58,7 +58,7 @@ for(i in 1:length(linksall)){
     commenters[[i]] <- xpathSApply(blogdata, "//*/b[@class='fn']", xmlValue)
   ); if(class(result) == "try-error") next;
 # little pause between each URL so we don't hurt the server
-Sys.sleep(5)
+Sys.sleep(10)
 }
 
 # add columns of URLs to the fulltext post
